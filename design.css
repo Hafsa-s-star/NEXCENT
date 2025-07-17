@@ -1,0 +1,99 @@
+/* Form.html */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-wrapper {
+  width: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.forms {
+  display: flex;
+  width: 200%;
+  transition: transform 0.5s ease;
+}
+
+.form-container {
+  width: 50%;
+  padding: 30px;
+}
+
+h2 {
+  text-align: center;
+  color: #4CAF4F;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s;
+}
+
+form input:focus {
+  border-color: #4CAF4F;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  background-color: #4CAF4F;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.toggle-text {
+  text-align: center;
+  margin-top: 15px;
+  color: #555;
+}
+
+.toggle-text label {
+  color: #4CAF4F;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.toggle-text label:hover {
+  text-decoration: underline;
+}
+
+/* Checkbox Hack: Move to Sign Up */
+#toggle:checked ~ .forms {
+  transform: translateX(-50%);
+}

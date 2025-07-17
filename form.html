@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log In & Sign Up</title>
+  <link rel="stylesheet" href="./design.css" />
+</head>
+<body>
+  <div class="form-wrapper">
+    <!-- Hidden Checkbox Toggle -->
+    <input type="checkbox" id="toggle" hidden />
+
+    <!-- Forms Container -->
+    <div class="forms">
+      <!-- Login Form -->
+      <div class="form-container login">
+        <h2>Login</h2>
+        <form>
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email" required />
+
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" required />
+
+          <button type="submit">Log In</button>
+          <p class="toggle-text">
+            Don’t have an account?
+            <label for="toggle">Sign Up</label>
+          </p>
+        </form>
+      </div>
+
+        <!-- Sign Up Form -->
+      <div class="form-container signup">
+        <h2>Sign Up</h2>
+        <form>
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your full name" required />
+
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email" required />
+
+          <label>Password</label>
+          <input type="password" placeholder="Create a password" required />
+
+          <button type="submit">Register</button>
+          <p class="toggle-text">
+            Already have an account?
+            <label for="toggle">Log In</label>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
